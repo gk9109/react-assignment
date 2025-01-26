@@ -32,6 +32,7 @@ function TaskForm(){
         <>
             <div className="taskAddingCard">
                 <form onSubmit={handleSubmit}>
+                    <h1>your task manager</h1>
                     <label>Your name:</label>
                     <input type="text" value={name} placeholder=" Name" onChange={e => setName(e.target.value)}></input>
 
@@ -41,8 +42,10 @@ function TaskForm(){
                     <label>Task description:</label>
                     <input type="text" value={description} placeholder=" Description" onChange={e => setDscription(e.target.value)}></input>
 
-                    <label>Done</label>
-                    <input type='checkbox' value={isDone} onChange={e => setDone(e.target.value = "done")}></input>
+                    {/* <label>Done</label>
+                    <input type='checkbox' value={isDone} onChange={e => setDone(e.target.value = "done")}></input> */}
+                    <label> date </label>
+                    <input type='datetime-local' value={isDone} onChange={e => setDone(e.target.value = "done")}></input>
                     <br></br>
                     <button type="submit">Submit</button>
                 </form>
